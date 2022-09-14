@@ -254,8 +254,8 @@
             let maxSpellLevel = 0
 
             function loadCharacter() {
-                document.getElementById("inputCasterLevel").value = parseInt(localStorage.getItem('casterLevel') ?? 3)
-                document.getElementById("inputCasterType").value = localStorage.getItem('casterType') ?? "sorcerer"
+                document.getElementById("inputCasterLevel").value = parseInt(localStorage.getItem('casterLevel') ?? 1)
+                document.getElementById("inputCasterType").value = localStorage.getItem('casterType') ?? "full"
                 let remainingSpellPoints = localStorage.getItem('remainingSpellPoints')
                 let remainingSorceryPoints = localStorage.getItem('remainingSorceryPoints')
                 changeCharacter()
