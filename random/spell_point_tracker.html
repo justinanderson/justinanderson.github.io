@@ -378,7 +378,7 @@
                     if (spellPoints.remaining < info.spell || info.sorcery > maxSpellLevel) {
                         b.disabled = true
                     }
-                    b.innerText = info.spell + " spell → " + info.sorcery + " sorcery (" + sorcery/spell + "%)"
+                    b.innerText = info.spell + " spell → " + info.sorcery + " sorcery (" + (sorcery/spell) + "%)"
                     b.onclick = (event) => {
                         convertSpellPointsToSorceryPoints(info.spell, info.sorcery)
                     }
